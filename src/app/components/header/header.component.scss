@@ -1,0 +1,23 @@
+.header {
+    &__inner {
+        display: flex;
+    }
+
+    &__menu {
+        display: flex;
+        margin: 0 auto;
+
+        &-item {
+            list-style: none;
+            margin-right: 20px;
+        }
+
+        &-link {
+            color: inherit;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

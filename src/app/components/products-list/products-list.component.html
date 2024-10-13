@@ -1,0 +1,14 @@
+<div class="products">
+    <div class="products__container container">
+        <div class="products__inner">
+            @for (product of productsList; track $index) {
+                <div class="products__item">
+                    <img class="products__img" src="{{product.image}}">
+                    <p class="product__title">{{product.title}}</p>
+                </div>
+            } @empty {
+                <p>No results</p>
+            }
+        </div>
+    </div>
+</div>

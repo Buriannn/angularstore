@@ -1,0 +1,21 @@
+<header>
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__logo"></div>
+      <ul class="header__menu">
+        @for(category of categories; track category) {
+          <li class="header__menu-item">
+            <a class="header__menu-link" [routerLink]="category">
+              {{category}}
+            </a>
+          </li>
+        } @empty {
+          <li>Not found</li>
+        }
+      </ul>
+      <div class="header__user-info">
+        <mat-icon>person</mat-icon>
+      </div>
+    </div>
+  </div>
+</header>
